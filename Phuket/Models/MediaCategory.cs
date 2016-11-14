@@ -10,8 +10,11 @@ namespace Phuket.Models
     public class MediaCategory
     {
         public int MediaCategoryID { get; set; }
-        public string MediaCategoryType { get; set; }
+        public string MediaCategoryDescription { get; set; }
+        public string MediaCategoryExtension { get; set; }
+        public int MediaCategoryMaxHeight { get; set; }
+        public int MediaCategoryMaxWidth { get; set; }
 
-        public virtual ICollection<Media> MediaItems { get; set; }
+        public virtual ICollection<Media> Medias { get; set; }
     }
 }

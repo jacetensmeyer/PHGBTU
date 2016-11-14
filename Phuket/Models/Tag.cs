@@ -13,6 +13,7 @@ namespace Phuket.Models
         public string TagKeyword { get; set; }
         public string TagType { get; set; }
 
-        public virtual ICollection<Media> MediaItems { get; set; }
+        public virtual ICollection<Media> Medias { get; set; }
+        public virtual ICollection<ContentBlock> ContentBlocks { get; set; }
     }
 }

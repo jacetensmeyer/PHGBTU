@@ -198,7 +198,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContentBlock.cs" />
-    <Compile Include="Models\ContentCategory.cs" />
+    <Compile Include="Models\ContentBlockCategory.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MediaCategory.cs" />
