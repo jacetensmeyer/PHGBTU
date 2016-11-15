@@ -175,25 +175,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611061540418_InitialSeed.cs" />
-    <Compile Include="Migrations\201611061540418_InitialSeed.Designer.cs">
-      <DependentUpon>201611061540418_InitialSeed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611061545483_Seed1.cs" />
-    <Compile Include="Migrations\201611061545483_Seed1.Designer.cs">
-      <DependentUpon>201611061545483_Seed1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611071442513_Seed2.cs" />
-    <Compile Include="Migrations\201611071442513_Seed2.Designer.cs">
-      <DependentUpon>201611071442513_Seed2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611071457589_Seed3.cs" />
-    <Compile Include="Migrations\201611071457589_Seed3.Designer.cs">
-      <DependentUpon>201611071457589_Seed3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611071512310_PageContentBlockJoin.cs" />
-    <Compile Include="Migrations\201611071512310_PageContentBlockJoin.Designer.cs">
-      <DependentUpon>201611071512310_PageContentBlockJoin.cs</DependentUpon>
+    <Compile Include="Migrations\201611152118566_newSchema.cs" />
+    <Compile Include="Migrations\201611152118566_newSchema.Designer.cs">
+      <DependentUpon>201611152118566_newSchema.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -279,20 +263,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611061540418_InitialSeed.resx">
-      <DependentUpon>201611061540418_InitialSeed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611061545483_Seed1.resx">
-      <DependentUpon>201611061545483_Seed1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611071442513_Seed2.resx">
-      <DependentUpon>201611071442513_Seed2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611071457589_Seed3.resx">
-      <DependentUpon>201611071457589_Seed3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611071512310_PageContentBlockJoin.resx">
-      <DependentUpon>201611071512310_PageContentBlockJoin.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611152118566_newSchema.resx">
+      <DependentUpon>201611152118566_newSchema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

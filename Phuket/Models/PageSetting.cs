@@ -10,6 +10,7 @@ namespace Phuket.Models
     public class PageSetting
     {
         public int PageSettingID { get; set; }
+        [StringLength(100)]
         public string PageLayoutSharedView { get; set; }
 
 

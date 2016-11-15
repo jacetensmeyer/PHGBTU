@@ -7,13 +7,13 @@ namespace Phuket.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class PageContentBlockJoin : IMigrationMetadata
+    public sealed partial class newSchema : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(PageContentBlockJoin));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(newSchema));
         
         string IMigrationMetadata.Id
         {
-            get { return "201611071512310_PageContentBlockJoin"; }
+            get { return "201611152118566_newSchema"; }
         }
         
         string IMigrationMetadata.Source
