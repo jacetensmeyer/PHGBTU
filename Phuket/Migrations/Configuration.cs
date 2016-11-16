@@ -65,6 +65,25 @@ namespace Phuket.Migrations
             //mediaCategories.ForEach(s => context.MediaCategories.Add(s));
             //context.SaveChanges();
 
+            var mediaCategories = new List<MediaCategory>
+           {   new MediaCategory { MediaCategoryDescription="Video-Medium",MediaCategoryExtension =".mp4",
+               MediaCategoryMaxHeight =320,MediaCategoryMaxWidth=480},
+               new MediaCategory { MediaCategoryDescription="Video-Large",MediaCategoryExtension =".mp4",
+               MediaCategoryMaxHeight =640,MediaCategoryMaxWidth=960},
+               new MediaCategory { MediaCategoryDescription="Image-Thumbnail",MediaCategoryExtension =".png",
+               MediaCategoryMaxHeight =57,MediaCategoryMaxWidth=57},
+               new MediaCategory { MediaCategoryDescription="Image-Medium",MediaCategoryExtension =".jpg",
+               MediaCategoryMaxHeight =320,MediaCategoryMaxWidth=480},
+               new MediaCategory { MediaCategoryDescription="Image-Large",MediaCategoryExtension =".jpg",
+               MediaCategoryMaxHeight =640,MediaCategoryMaxWidth=960},
+               new MediaCategory { MediaCategoryDescription="Doc",MediaCategoryExtension =".Doc"},
+               new MediaCategory { MediaCategoryDescription="Docx",MediaCategoryExtension =".Docx"},
+               new MediaCategory { MediaCategoryDescription="PDF",MediaCategoryExtension =".pdf"},
+               new MediaCategory { MediaCategoryDescription="Text",MediaCategoryExtension =".txt"}
+           };
+            mediaCategories.ForEach(s => context.MediaCategories.Add(s));
+            context.SaveChanges();
+
             //var mediaItems = new List<Media>
             //{
             //    new Media{MediaItemActive=true,MediaItemHeight=200,MediaItemWidth=200,MediaItemLongDescription="LongDesc1",MediaItemShortDescription="ShortDesc1",MediaItemURL="url1", MediaCategoryID=1},
@@ -73,6 +92,7 @@ namespace Phuket.Migrations
             //};
             //mediaItems.ForEach(s => context.MediaItems.Add(s));
             //context.SaveChanges();
+
 
             //var tags = new List<Tag>
             //{
