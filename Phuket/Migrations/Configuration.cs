@@ -82,6 +82,20 @@ namespace Phuket.Migrations
             //};
             //tags.ForEach(s => context.Tags.Add(s));
             //context.SaveChanges();
+
+            var tags = new List<Tag>
+            {
+                new Tag{TagKeyword="Party"},
+                new Tag{TagKeyword="Coconut"},
+                new Tag{TagKeyword="Christmas", TagType="F"},
+                new Tag{TagKeyword="New Years", TagType="F"},
+                new Tag{TagKeyword="News", TagType="P"},
+                new Tag{TagKeyword="Events", TagType="P"},
+                new Tag{TagKeyword="Club", TagType="T"},
+                new Tag{TagKeyword="Sponsor", TagType="T"},
+            };
+            tags.ForEach(s => context.Tags.Add(s));
+            context.SaveChanges();
         }
     }
 }
