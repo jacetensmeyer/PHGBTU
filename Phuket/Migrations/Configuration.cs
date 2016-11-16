@@ -36,14 +36,14 @@ namespace Phuket.Migrations
             //pages.ForEach(s => context.Pages.Add(s));
             //context.SaveChanges();
 
-            //var contentCategories = new List<ContentCategory>
-            //{
-            //    new ContentCategory{ContentCategoryType="Image"},
-            //    new ContentCategory{ContentCategoryType="Doc"},
-            //    new ContentCategory{ContentCategoryType="Text"},
-            //};
-            //contentCategories.ForEach(s => context.ContentCategories.Add(s));
-            //context.SaveChanges();
+            var contentBlockCategories = new List<ContentBlockCategory>
+            {
+                new ContentBlockCategory{CBCategory="News"},
+                new ContentBlockCategory{CBCategory="Event"},
+                new ContentBlockCategory{CBCategory="Sponsor"},
+            };
+            contentBlockCategories.ForEach(s => context.ContentBlockCategories.Add(s));
+            context.SaveChanges();
 
             //var contentBlocks = new List<ContentBlock>
             //{
