@@ -7,13 +7,13 @@ namespace Phuket.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class newSchema : IMigrationMetadata
+    public sealed partial class NewDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(newSchema));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NewDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "201611152118566_newSchema"; }
+            get { return "201611171929505_NewDatabase"; }
         }
         
         string IMigrationMetadata.Source

@@ -35,8 +35,18 @@ namespace Phuket.Models
         [Required]
         public int MediaCategoryID { get; set; }
 
-        public virtual ICollection<ContentBlock> ContentBlocks { get; set; }
+        //mediafolder nvarchar(25)
+        [Required]
+        [StringLength(25)]
+        public string MediaFolder { get; set; }
+
+        //mediaphysicalname nvarchar(25)
+        [Required]
+        [StringLength(25)]
+        public string MediaPhysicalName { get; set; }
+
+        public virtual ICollection<ContentBlockMedia> ContentBlockMedias { get; set; }
         public virtual MediaCategory MediaCategories { get; set; }
-        public virtual ICollection<Tag> Tags { get; set; }
+        public virtual ICollection<MediaTag> MediaTags { get; set; }
     }
 }

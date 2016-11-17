@@ -175,18 +175,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611152118566_newSchema.cs" />
-    <Compile Include="Migrations\201611152118566_newSchema.Designer.cs">
-      <DependentUpon>201611152118566_newSchema.cs</DependentUpon>
+    <Compile Include="Migrations\201611171929505_NewDatabase.cs" />
+    <Compile Include="Migrations\201611171929505_NewDatabase.Designer.cs">
+      <DependentUpon>201611171929505_NewDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContentBlock.cs" />
     <Compile Include="Models\ContentBlockCategory.cs" />
+    <Compile Include="Models\ContentBlockMedia.cs" />
+    <Compile Include="Models\ContentBlockTag.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MediaCategory.cs" />
     <Compile Include="Models\Media.cs" />
+    <Compile Include="Models\MediaTag.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\PageSetting.cs" />
     <Compile Include="Models\Tag.cs" />
@@ -263,8 +266,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611152118566_newSchema.resx">
-      <DependentUpon>201611152118566_newSchema.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611171929505_NewDatabase.resx">
+      <DependentUpon>201611171929505_NewDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

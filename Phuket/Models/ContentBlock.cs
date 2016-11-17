@@ -40,7 +40,8 @@ namespace Phuket.Models
 
 
         
-        public virtual ICollection<Media> Medias { get; set; }
-        public virtual ICollection<Tag> Tags { get; set; }
+        public virtual ICollection<ContentBlockMedia> ContentBlockMedias { get; set; }
+        public virtual ICollection<ContentBlockTag> ContentBlockTags { get; set; }
+        public virtual ContentBlockCategory ContentBlockCategory { get; set; }
     }
 }

@@ -96,6 +96,34 @@ namespace Phuket.Migrations
             };
             tags.ForEach(s => context.Tags.Add(s));
             context.SaveChanges();
+
+            var contentBlockCategories = new List<ContentBlockCategory> {
+                new ContentBlockCategory { CBCategory = "News" },
+                new ContentBlockCategory { CBCategory = "Event" },
+                new ContentBlockCategory { CBCategory = "Sponsor" },
+            }; contentBlockCategories.ForEach(s => context.ContentBlockCategories.Add(s));
+            context.SaveChanges();
+
+            var mediaCategories = new List<MediaCategory>
+           {   new MediaCategory { MediaCategoryDescription="Video-Medium",MediaCategoryExtension =".mp4",
+               MediaCategoryMaxHeight =320,MediaCategoryMaxWidth=480},
+               new MediaCategory { MediaCategoryDescription="Video-Large",MediaCategoryExtension =".mp4",
+               MediaCategoryMaxHeight =640,MediaCategoryMaxWidth=960},
+               new MediaCategory { MediaCategoryDescription="Image-Thumbnail",MediaCategoryExtension =".png",
+               MediaCategoryMaxHeight =57,MediaCategoryMaxWidth=57},
+               new MediaCategory { MediaCategoryDescription="Image-Medium",MediaCategoryExtension =".jpg",
+               MediaCategoryMaxHeight =320,MediaCategoryMaxWidth=480},
+               new MediaCategory { MediaCategoryDescription="Image-Large",MediaCategoryExtension =".jpg",
+               MediaCategoryMaxHeight =640,MediaCategoryMaxWidth=960},
+               new MediaCategory { MediaCategoryDescription="Doc",MediaCategoryExtension =".Doc"},
+               //new MediaCategory { MediaCategoryDescription="Docx",MediaCategoryExtension =".Docx"},
+               new MediaCategory { MediaCategoryDescription="PDF",MediaCategoryExtension =".pdf"},
+               new MediaCategory { MediaCategoryDescription="Text",MediaCategoryExtension =".txt"}
+           };
+            mediaCategories.ForEach(s => context.MediaCategories.Add(s));
+            context.SaveChanges();
+
+            
         }
     }
 }
